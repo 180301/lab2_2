@@ -42,7 +42,7 @@ public class Purchase {
 	private Purchase() {
 	}
 
-	Purchase(Id aggregateId, ClientData clientData,
+	public Purchase(Id aggregateId, ClientData clientData,
 			List<PurchaseItem> items, Date purchaseDate, boolean paid,
 			Money totalCost) {
 		this.aggregateId = aggregateId;
